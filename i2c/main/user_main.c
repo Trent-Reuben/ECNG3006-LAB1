@@ -1,3 +1,10 @@
+/*
+Adjusted i2c example for the ADS1115
+Name: Trent Reuben
+I.D.: 816015091
+Due Date: 7/10/22
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

@@ -232,7 +232,7 @@
 			[
 				{
 					"backtrace" : 9,
-					"path" : "/home/trent/trent-workspace/ECNG3006-LAB1/hello_world/build/config"
+					"path" : "/home/trent/trent-workspace/ECNG3006-LAB1/i2c/build/config"
 				},
 				{
 					"backtrace" : 10,
@@ -428,11 +428,11 @@
 			[
 				{
 					"backtrace" : 15,
-					"define" : " PROJECT_NAME=\"hello-world\""
+					"define" : " PROJECT_NAME=\"i2c\""
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PROJECT_VER=\"1\""
+					"define" : "PROJECT_VER=\"7817f7e-dirty\""
 				},
 				{
 					"backtrace" : 2,
@@ -447,7 +447,7 @@
 			[
 				{
 					"backtrace" : 9,
-					"path" : "/home/trent/trent-workspace/ECNG3006-LAB1/hello_world/build/config"
+					"path" : "/home/trent/trent-workspace/ECNG3006-LAB1/i2c/build/config"
 				},
 				{
 					"backtrace" : 10,
