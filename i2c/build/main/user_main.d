@@ -126,3 +126,4 @@ user_main.o: \
 /home/trent/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h:
 
 /home/trent/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/gpio_register.h:
+/home/trent/trent-workspace/ECNG3006-LAB1/i2c/main/./user_main.c:

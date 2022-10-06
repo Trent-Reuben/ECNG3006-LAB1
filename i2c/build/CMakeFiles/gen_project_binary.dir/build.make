@@ -58,7 +58,7 @@ CMakeFiles/gen_project_binary: .bin_timestamp
 
 .bin_timestamp: i2c.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/trent/trent-workspace/ECNG3006-LAB1/i2c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating binary image from built executable"
-	python /home/trent/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py --chip esp8266 elf2image --flash_mode dio --flash_freq 40m --flash_size 2MB --version=3 -o /home/trent/trent-workspace/ECNG3006-LAB1/i2c/build/i2c.bin i2c.elf
+	python /home/trent/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py --chip esp8266 elf2image --flash_mode dio --flash_freq 40m --flash_size 1MB --version=3 -o /home/trent/trent-workspace/ECNG3006-LAB1/i2c/build/i2c.bin i2c.elf
 	/usr/bin/cmake -E echo "Generated /home/trent/trent-workspace/ECNG3006-LAB1/i2c/build/i2c.bin"
 	/usr/bin/cmake -E md5sum /home/trent/trent-workspace/ECNG3006-LAB1/i2c/build/i2c.bin > /home/trent/trent-workspace/ECNG3006-LAB1/i2c/build/.bin_timestamp
 

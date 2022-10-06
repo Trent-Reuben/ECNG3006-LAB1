@@ -13,8 +13,6 @@
 #include "driver/i2c.h"
 
 
-static const char *TAG = "main";
-
 
 #define I2C_EXAMPLE_MASTER_SCL_IO           2               /*!< gpio number for I2C master clock */
 #define I2C_EXAMPLE_MASTER_SDA_IO           0               /*!< gpio number for I2C master data  */
@@ -61,15 +59,15 @@ static esp_err_t i2c_example_master_init()
 
 static esp_err_t i2c_master_write_1115(i2c_port_t i2c_num, uint8_t reg_address, uint16_t *data, uint16_t data_len)
 {
-    // uint8_t write_buffer[2]; //2 unsigned int 8 variable (16-bit number)
-    // write_buffer[0] = (*data >> 8) & 0xFF;
-    // write_buffer[1] = (*data >> 0) & 0xFF;
+    uint8_t write_buffer[2]; //2 unsigned int 8 variable (16-bit number)
+    write_buffer[0] = (*data >> 8) & 0xFF;
+    write_buffer[1] = (*data >> 0) & 0xFF;
     esp_err_t ret;
     i2c_cmd_handle_t cmd = i2c_cmd_link_create();
     i2c_master_start(cmd);
     i2c_master_write_byte(cmd, ADDR_1115_GND << 1 | WRITE_BIT, ACK_CHECK_EN);
     i2c_master_write_byte(cmd, reg_address, ACK_CHECK_EN);
-    i2c_master_write(cmd, data, data_len, ACK_CHECK_EN);
+    i2c_master_write(cmd, write_buffer, data_len, ACK_CHECK_EN);
     i2c_master_stop(cmd);
     ret = i2c_master_cmd_begin(i2c_num, cmd, 1000 / portTICK_RATE_MS);
     i2c_cmd_link_delete(cmd);
@@ -93,6 +91,7 @@ static esp_err_t i2c_master_read_1115(i2c_port_t i2c_num, uint8_t reg_address, u
 
     if (ret != ESP_OK)
     {
+        printf("Could not read from ADS1115. \n");
         return ret;
     }
 
@@ -108,40 +107,39 @@ static esp_err_t i2c_master_read_1115(i2c_port_t i2c_num, uint8_t reg_address, u
     return ret;
 }
 
-static esp_err_t i2c__master_init_1115(i2c_port_t i2c_num)
+static esp_err_t i2c__master_init_1115(i2c_port_t i2c_num, uint16_t *data)
 {
-    uint8_t cmd_data;
     vTaskDelay(100 / portTICK_RATE_MS);
     i2c_example_master_init();
-    uint16_t config_bit = 0x4480; //Table 8 Config Register Field using 0b0100010010000000
-    ESP_ERROR_CHECK(i2c_master_write_1115(i2c_num, ADS_1115_CONFIG, *config_bit,1));
+    ESP_ERROR_CHECK(i2c_master_write_1115(i2c_num, ADS_1115_CONFIG, data,1));
     return ESP_OK;
 }
 
 static void i2c_task_example(void *arg)
 {
-    uint16_t sensor_data;
-
+    uint16_t sensor_data = 0;
+    uint16_t config_bit = 0x4480; //Table 8 Config Register Field using 0b0100010010000000
     esp_err_t ret;
-    ret = i2c_example_master_init();
-    if (ret != ESP_OK)
-    {
-        printf("An error has occurred with initialisation protocol (ESP)");
-    }
 
-    ret = i2c__master_init_1115(I2C_EXAMPLE_MASTER_NUM);
+    ret = i2c__master_init_1115(I2C_EXAMPLE_MASTER_NUM, &config_bit);
     if (ret != ESP_OK)
     {
         printf("An error has occurred with initialisation protocol (ADS1115)");
+        i2c_driver_delete(I2C_EXAMPLE_MASTER_NUM);
     } 
+    else
+    {
+        printf("Successfully initialised. \n");
+    }
 
     while(1)
     {
         ret = i2c_master_read_1115(I2C_EXAMPLE_MASTER_NUM,ADS1115_CONV, &sensor_data, 1);
         if(ret==ESP_OK)
         {
-            printf("%d/n",(int)sensor_data);
-            printf("Voltage: %fV\n ",(int)sensor_data * 6.25e-05);
+            double voltage = (double)sensor_data * 6.25e-5;
+            printf("Sensor information: %dV\n ",(int)sensor_data);
+            printf("Voltage: %d.%d V.\n",(uint16_t)voltage, (uint16_t)(voltage * 100)%100);
             vTaskDelay(1000 / portTICK_PERIOD_MS);
         }  
         else
