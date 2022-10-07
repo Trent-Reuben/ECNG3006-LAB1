@@ -1,43 +1,37 @@
-/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/app_update/libapp_update.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/bootloader_support/libbootloader_support.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/coap/libcoap.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/console/libconsole.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-tls/libesp-tls.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-wolfssl/libesp-wolfssl.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp8266/libesp8266.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp_common/libesp_common.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp_event/libesp_event.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp_gdbstub/libesp_gdbstub.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp_http_client/libesp_http_client.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp_http_server/libesp_http_server.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp_https_ota/libesp_https_ota.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp_ringbuf/libesp_ringbuf.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/fatfs/libfatfs.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/freemodbus/libfreemodbus.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/freertos/libfreertos.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/heap/libheap.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/http_parser/libhttp_parser.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/jsmn/libjsmn.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/json/libjson.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/libsodium/liblibsodium.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/log/liblog.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/lwip/liblwip.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/main/libmain.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/mbedtls/libmbedtls.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/mdns/libmdns.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/mqtt/libmqtt.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/newlib/libnewlib.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/nvs_flash/libnvs_flash.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/openssl/libopenssl.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/protobuf-c/libprotobuf-c.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/protocomm/libprotocomm.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/pthread/libpthread.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/spi_flash/libspi_flash.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/spi_ram/libspi_ram.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/spiffs/libspiffs.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/tcp_transport/libtcp_transport.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/tcpip_adapter/libtcpip_adapter.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/vfs/libvfs.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/wear_levelling/libwear_levelling.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/wifi_provisioning/libwifi_provisioning.a
- /home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/wpa_supplicant/libwpa_supplicant.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/tcpip_adapter/libtcpip_adapter.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/esp_common/libesp_common.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/esp_event/libesp_event.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/bootloader_support/libbootloader_support.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/nvs_flash/libnvs_flash.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/esp8266/libesp8266.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/vfs/libvfs.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/lwip/liblwip.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/log/liblog.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/heap/libheap.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/freertos/libfreertos.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/newlib/libnewlib.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/spi_flash/libspi_flash.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/app_update/libapp_update.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/console/libconsole.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/http_parser/libhttp_parser.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/esp-tls/libesp-tls.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/esp_gdbstub/libesp_gdbstub.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/tcp_transport/libtcp_transport.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/esp_http_client/libesp_http_client.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/esp_http_server/libesp_http_server.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/esp_https_ota/libesp_https_ota.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/wear_levelling/libwear_levelling.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/fatfs/libfatfs.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/freemodbus/libfreemodbus.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/jsmn/libjsmn.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/json/libjson.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/libsodium/liblibsodium.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/mqtt/libmqtt.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/openssl/libopenssl.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/protobuf-c/libprotobuf-c.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/pthread/libpthread.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/spi_ram/libspi_ram.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/spiffs/libspiffs.a
+/home/trent/trent-workspace/ECNG3006-LAB1/gpio/build/esp-idf/main/libmain.a

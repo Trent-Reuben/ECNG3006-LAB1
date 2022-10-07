@@ -25,7 +25,6 @@ Due Date: 7/10/22
 static const char *TAG = "main";
 
 #define GPIO_OUTPUT_IO_0    2
-
 #define GPIO_INPUT_IO_0     0
 
 static xQueueHandle gpio_evt_queue = NULL;
@@ -40,8 +39,10 @@ static void gpio_task_example(void *arg)
 {
     uint32_t io_num;
 
-    for (;;) {
-        if (xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY)) {
+    for (;;)
+    {
+        if (xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY))
+        {
             ESP_LOGI(TAG, "GPIO[%d] intr, val: %d\n", io_num, gpio_get_level(io_num));
         }
     }
@@ -76,7 +77,7 @@ void app_main(void)
     gpio_config(&io_conf);
 
     //change gpio intrrupt type for one pin
-    gpio_set_intr_type(GPIO_INPUT_IO_0, GPIO_INTR_NEGEDGE);
+    gpio_set_intr_type(GPIO_INPUT_IO_0, GPIO_INTR_ANYEDGE);
 
     //create a queue to handle gpio event from isr
     gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
@@ -90,7 +91,8 @@ void app_main(void)
 
     int cnt = 0;
 
-    while (1) {
+    while (1)
+    {
         ESP_LOGI(TAG, "cnt: %d\n", cnt++); //count each cycle
         vTaskDelay(1000 / portTICK_RATE_MS); // 1 second delay 
         gpio_set_level(GPIO_OUTPUT_IO_0, cnt % 2);
