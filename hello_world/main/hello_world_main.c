@@ -15,7 +15,8 @@ Due Date: 7/10/22
 
 
 void app_main()
-{
+{   
+    printf("\n"); //blank line as partitions
     printf("Hi. My name is Trent Reuben. I.D. number: 816015091\n");
 
     /* Print chip information */
@@ -33,7 +34,8 @@ void app_main()
     Last 2 digits: 91
     # of seconds to restart = 91 modulo 17 = 6
     */
-    for (int i = 6; i >= 0; i--) {
+    for (int i = 6; i >= 0; i--) 
+    {
         printf("Restarting in %d seconds...\n", i);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
