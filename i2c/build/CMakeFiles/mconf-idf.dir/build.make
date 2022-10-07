@@ -121,7 +121,6 @@ mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build: /home/trent/esp/ESP8266_RT
 mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build: /home/trent/esp/ESP8266_RTOS_SDK/tools/kconfig/nconf.gui.c
 mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build: /home/trent/esp/ESP8266_RTOS_SDK/tools/kconfig/symbol.c
 mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build: /home/trent/esp/ESP8266_RTOS_SDK/tools/kconfig/util.c
-mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build: /home/trent/esp/ESP8266_RTOS_SDK/tools/kconfig/zconf.tab.c
 mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build: /home/trent/esp/ESP8266_RTOS_SDK/tools/kconfig/Makefile
 mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build: /home/trent/esp/ESP8266_RTOS_SDK/tools/cmake/idf.cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/trent/trent-workspace/ECNG3006-LAB1/i2c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing build step for 'mconf-idf'"

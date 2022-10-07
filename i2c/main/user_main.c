@@ -145,7 +145,7 @@ static void i2c_task_example(void *arg)
         if(ret==ESP_OK)
         {
             double voltage = (double)sensor_data * 6.25e-5;
-            printf("Sensor information: %dV\n ",(int)sensor_data);
+            printf("Sensor information: %d \n ",(int)sensor_data);
             printf("Voltage: %d.%d V.\n",(uint16_t)voltage, (uint16_t)(voltage * 100)%100);
             vTaskDelay(1000 / portTICK_PERIOD_MS);
         }  
