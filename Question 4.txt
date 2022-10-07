@@ -1,0 +1,12 @@
+All of the resources listed below were utilized in the lab exercise. A breakdown of effectiveness and future leveraging is also discussed.
+
+(a)  Coding Standards – The BARR-C:2018 Embedded C Coding Standard was utilized. The use of the coding standards proved effective in producing succinct code for maintainability and readability. The use of the coding standard also allowed for the reduction of coding errors such as the use of “Rule 1.3: Braces” which allowed for a brace to not be left out or miss-placed. “Rule 1.6: Casts” and “Rule 4.1: Naming Conventions” were adhered to. Further understanding of the BARR-C coding standard will be leveraged when developing future code such as the “ECNG 3006 Mini-Project” and beyond when developing embedded C code as it is a good practice.
+
+(b)  Toolchain Features: The toolchain for the ESP8266 was utilized through the use of the GCC compiler, mingw, python, and the esp SDK. Using the toolchain features mentioned, allowed for the compilation of C code using the FreeRTOS real-time kernel as well as the flashing of the esp8266-01 board using the python module “python -m esptool”. The SDK was used for each question of the lab as this housed example code which was modified. The virtual environment made use of the MSYS software which was used to develop code. For all ESP8266-01 related development, the toolchain mentioned will be utilized in the future.
+
+(c)  Debugging practices – Debugging practices were carried out mainly through two forms; terminal window and serial console. Syntax errors and inconsistencies such as unused code and mismatching file names were identified using the terminal window when compiling and building the project. Using the error information presented, the problem was localized and corrected according. Once corrected, the project was recompiled which resulted in a successful build. The serial console, ie. PUTTY was utilized to identify errors while the code was executed for the desired output. Using the two methods of debugging, the following general steps were followed:
++Isolate source of the error/bug
++Identify the reason for said error
++Determine a suitable fix
++Apply fix and test.
+These practices can be applied to any future software testing and will be leveraged as such.
