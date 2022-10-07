@@ -16,7 +16,7 @@ Due Date: 7/10/22
 
 void app_main()
 {   
-    printf("\n"); //blank line as partitions
+    printf("\n"); //blank line as partition
     printf("Hi. My name is Trent Reuben. I.D. number: 816015091\n");
 
     /* Print chip information */
